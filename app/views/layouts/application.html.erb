@@ -7,8 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<nav>
+  <ul>
+    <li><%= link_to "Dashboard", root_path %></li>
+    <li><%= link_to "Make A Transaction", simple_pages_make_a_transaction_path %></li>
+    <li><%= link_to "View Activity", simple_pages_view_activity_path %></li>
+    <li><%= link_to "Cash Advance", simple_pages_cash_advance_path %></li>
+    <li><%= link_to "Reports", simple_pages_reports_path %></li>
+  </ul>
+</nav>
 <%= yield %>
-
+<footer>
+  <ul>
+    <li><%= link_to "PRIVACY POLICY", root_path %></li>
+    <li><%= link_to "CONTACT US", simple_pages_make_a_transaction_path %></li>
+    <li><%= link_to "TERMS OF USE", simple_pages_view_activity_path %></li>
+  </ul>
+</footer>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<ul>
+    <li><%= link_to "Withdraw to Agent ", withdraw_cash_withdraw_to_agent_path %></li>
+    <li><%= link_to "Withdraw to BANK", withdraw_cash_withdraw_to_bank_path %></li>
+    <li><%= link_to "Withdraw to Mobile Money", withdraw_cash_withdraw_to_mobile_path %></li>
+ </ul>
+ <h1>Past Withdrawals</h1>
+<table id="customers">
+  <tr>
+    <th>TIME & DATE</th>
+    <th>WITHDRAW TO</th>
+    <th>AMOUNT</th>
+    <th>STATUS</th>
+  </tr>
+  <tr>
+    <td>25.5.2018 23.00</td>
+    <td>ABC BANK </td>
+    <td>kes 50,000</td>
+    <td>PENDING</td>
+  </tr>
+  <tr>
+    <td>25.5.2018 23.00</td>
+    <td>AGENT </td>
+    <td>kes 50,000</td>
+    <td>REVERSED</td>
+  </tr>
+  
+</table>

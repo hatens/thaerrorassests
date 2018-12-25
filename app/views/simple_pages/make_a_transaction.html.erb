@@ -1,0 +1,29 @@
+  <ul>
+    <li><%= link_to "Deposit from MPESA ", make_a_transaction_deposit_from_mpesa_path %></li>
+    <li><%= link_to "Transfer Money", make_a_transaction_transfer_money_path %></li>
+    <li><%= link_to "Buy Airtime", make_a_transaction_buy_airtime_path %></li>
+    <li><%= link_to "Bulk Payment", make_a_transaction_bulk_payment_path %></li>
+    <li><%= link_to "Withdraw Cash", make_a_transaction_withdraw_cash_path %></li>
+    <li><%= link_to "Invest Your Money", make_a_transaction_invest_your_money_path %></li>
+  </ul>
+  <h1>COMPLETED TRANSACTIONS</h1>
+<table id="customers">
+  <tr>
+    <th>TRANSACTION TYPE</th>
+    <th>TIME & DATE</th>
+    <th>TRANSACTION ID</th>
+    <th>AMOUNT</th>
+    <th>STATUS</th>
+  </tr>
+  <tr>
+    <td>DEPOSIT FROM MPESA</td>
+    <td>25.5.2018 23.00</td>
+    <td>H25444152LK</td>
+    <td>kes 50,000</td>
+    <td>COMPLETED</td>
+  </tr>
+  
+</table>
+
+<li><%= link_to "REQUEST STATEMENT", simple_pages_cash_advance_path %></li>
+<li><%= link_to "DOWNLOAD MINI - STATEMENT", simple_pages_cash_advance_path %></li>
