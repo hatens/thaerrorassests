@@ -1,34 +1,124 @@
-<h1>Current Available Balance</h1>
-<p>50,000</p>
-<h1>Day’s Total Transaction</h1>
-<p>100</p>
-<h1>Account Balance</h1>
-<p>100</p>
-<h1>PENDING TRANSACTIONS</h1>
-<table id="customers">
-  <tr>
-    <th>TRANSACTION ID</th>
-    <th>TRANSACTION TYPE</th>
-    <th>TIME & DATE</th>
-    <th>LOGGED ON</th>
-  </tr>
-  <tr>
-    <td>KJLM451254</td>
-    <td>DEPOSIT</td>
-    <td>25.5.2018</td>
-    <td>YES</td>
-  </tr>
-  
-</table>
-<h1>MOST RECENT TRANSACTIONS</h1>
-<table id="customers">
-  <tr>
-    <th>TRANSACTION ID</th>
-    <th>ACTION</th>
-  </tr>
-  <tr>
-    <td>KJLM451254</td>
-    <td>DROP DOWN</td>
-  </tr>
-</table>
+<div class="content">
 
+        <div class="card-summary-container PushTop_25 clearfix">
+            <div class="card-summary-box card-summary-two-col FloatLeft clearfix">
+
+                <div class="card-summary-header card-summary-header-figures-container clearfix">
+                    <div class="PushLeft_10">
+                        <span class="card-summary-figures">Ksh 0.13</span>
+                        <small>Current balance</small>
+                    </div>
+                </div>
+
+                <div class="card-summary-header-figures-container clearfix">
+                    <div class="PushLeft_10">
+                        <span class="card-summary-figures">Ksh 0.13</span>
+                        <small>Available balance</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-summary-box card-summary-one-col PushLeft_30 FloatLeft clearfix">
+                <h4>Invest your money</h4>
+                <div class="card-summary-body clearfix">
+                    <p>Make an investment of your money and enjoy Profits</p>
+                    <div class="card-summary-one-col-button">
+                        <a class="MainButton MainButton_orange card-summary-one-col-inputbutton" href="/transfers/transfer">Invest Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-summary-box card-summary-one-col FloatRight clearfix">
+                <h4 class="PushLeft_5">Withdraw</h4>
+                <div class="card-summary-body clearfix">
+                    <p>Get your funds back to your hand in no min.</p>
+                    <div class="card-summary-one-col-button">
+                        <a class="MainButton MainButton_blue card-summary-one-col-button" href="/pay/payments/new"><span class="translation_missing" title="translation missing: en.pay.payments.pay_now">Withdraw Now</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+            
+
+        <div class="PushTop_45  clearfix">
+            <ul class="nav nav-tabs NewNav_container">
+                <li><a href="/pay_merchant_recipients">Last Investment</a></li>
+                <li class="active"><a href="#">Last Investment Withdrawal</a></li>
+            </ul>
+
+            <div id="external_mpesa_wallets_table_wrapper" class="dataTables_wrapper" role="grid">
+                <div class="fg-toolbar ui-toolbar ui-widget-header ui-corner-tl ui-corner-tr ui-helper-clearfix">
+                    <div id="external_mpesa_wallets_table_length" class="dataTables_length"><label>Show <select size="1" name="external_mpesa_wallets_table_length" aria-controls="external_mpesa_wallets_table"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100" selected="selected">100</option></select> entries</label></div>
+                    <div
+                        class="dataTables_filter" id="external_mpesa_wallets_table_filter"><label>Search: <input type="text" aria-controls="external_mpesa_wallets_table"></label></div>
+                <div id="external_mpesa_wallets_table_processing" class="dataTables_processing" style="visibility: hidden;">Processing...</div>
+            </div>
+            <table id="external_mpesa_wallets_table" class="display display-mouse-pointer dataTable" aria-describedby="external_mpesa_wallets_table_info">
+                <thead>
+                    <tr role="row">
+                        <th class="ui-state-default" role="columnheader" tabindex="0" aria-controls="external_mpesa_wallets_table" rowspan="1" colspan="1" aria-sort="descending" aria-label="Name: activate to sort column ascending">
+                            <div class="DataTables_sort_wrapper">Name<span class="DataTables_sort_icon css_right ui-icon ui-icon-triangle-1-s"></span></div>
+                        </th>
+                        <th class="ui-state-default" role="columnheader" tabindex="0" aria-controls="external_mpesa_wallets_table" rowspan="1" colspan="1" aria-label="Phone number: activate to sort column ascending">
+                            <div class="DataTables_sort_wrapper">Phone number<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+                        </th>
+                        <th class="ui-state-default" role="columnheader" tabindex="0" aria-controls="external_mpesa_wallets_table" rowspan="1" colspan="1" aria-label="Created by: activate to sort column ascending">
+                            <div class="DataTables_sort_wrapper">Created by<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+                        </th>
+                        <th class="ui-state-default" role="columnheader" tabindex="0" aria-controls="external_mpesa_wallets_table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">
+                            <div class="DataTables_sort_wrapper">Status<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody class="tbodytab2" role="alert" aria-live="polite" aria-relevant="all">
+                    <tr class="odd" id="30392">
+                        <td class=" sorting_1">ROBERT NDEGE ONDIEKI</td>
+                        <td class="">+254715133551</td>
+                        <td class="">CHRIS HATENS</td>
+                        <td class="">Approved</td>
+                    </tr>
+                    <tr class="even" id="30973">
+                        <td class=" sorting_1">NICHOLAS OMBASA OMWOYO</td>
+                        <td class="">+254722455011</td>
+                        <td class="">CHRIS HATENS</td>
+                        <td class="">Approved</td>
+                    </tr>
+                    <tr class="odd" id="30515">
+                        <td class=" sorting_1">MATHEW MAGEKA</td>
+                        <td class="">+254711543474</td>
+                        <td class="">CHRIS HATENS</td>
+                        <td class="">Approved</td>
+                    </tr>
+                    <tr class="even" id="30974">
+                        <td class=" sorting_1">AZENATH AKEYO OKUMU</td>
+                        <td class="">+254725756834</td>
+                        <td class="">CHRIS HATENS</td>
+                        <td class="">Approved</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="fg-toolbar ui-toolbar ui-widget-header ui-corner-bl ui-corner-br ui-helper-clearfix">
+                <div class="dataTables_info" id="external_mpesa_wallets_table_info">Showing 1 to 4 of 4 entries</div>
+                <div class="dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi ui-buttonset-multi paging_full_numbers" id="external_mpesa_wallets_table_paginate"><a tabindex="0" class="first ui-corner-tl ui-corner-bl fg-button ui-button ui-state-default ui-state-disabled" id="external_mpesa_wallets_table_first">First</a><a tabindex="0" class="previous fg-button ui-button ui-state-default ui-state-disabled"
+                        id="external_mpesa_wallets_table_previous">Previous</a><span><a tabindex="0" class="fg-button ui-button ui-state-default ui-state-disabled">1</a></span><a tabindex="0" class="next fg-button ui-button ui-state-default ui-state-disabled"
+                        id="external_mpesa_wallets_table_next">Next</a><a tabindex="0" class="last ui-corner-tr ui-corner-br fg-button ui-button ui-state-default ui-state-disabled" id="external_mpesa_wallets_table_last">Last</a></div>
+            </div>
+        </div>
+        <div id="Pagination"></div>
+    </div>
+        
+
+        
+
+
+
+
+        <div class="push"></div>
+    </div>
+
+    <!-- end content -->

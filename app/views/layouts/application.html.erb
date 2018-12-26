@@ -7,22 +7,66 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav>
-  <ul>
-    <li><%= link_to "Dashboard", root_path %></li>
-    <li><%= link_to "Make A Transaction", simple_pages_make_a_transaction_path %></li>
-    <li><%= link_to "View Activity", simple_pages_view_activity_path %></li>
-    <li><%= link_to "Cash Advance", simple_pages_cash_advance_path %></li>
-    <li><%= link_to "Reports", simple_pages_reports_path %></li>
-  </ul>
-</nav>
+<div class="TopHeader">
+        <div class="TopHeader_Container">
+
+
+            <span class="Welcome"> Welcome <a href="/users/37359/edit">CHRIS HATENS</a> </span>
+            <ul class="TopLinks">
+                <li class="menu">
+                    <!--<li >-->
+                    <ul class="sf-menu">
+
+                        <li>
+                            <a href="/account_settings">Menu</a>
+                            <ul>
+                                <li><a href="/account_settings">Account settings</a></li>
+                                <li><a href="/companies/34967/account_configuration/edit">API settings</a></li>
+                                <li><a href="/users/37359/edit">Profile</a></li>
+                                <li><a href="/audits">Audit logs</a></li>
+                                <li><a href="/direct_deposits">Direct deposits</a></li>
+                                <li><a href="/financial_statements">Account statement</a></li>
+                                <li><a href="/messages">SMS logs</a></li>
+                                <li><a href="/sms_bundles">SMS bundles</a></li>
+                                <!-- <li><a href="/referral">Referrals</a></li> -->
+
+                                <!--<li></li>-->
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--</li>-->
+
+                    <b class="caret MenuArrow"></b> </li>
+                <li><a href="/help">Help</a></li>
+                |
+                <li><a rel="nofollow" data-method="delete" href="/users/sign_out">Sign out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--End TopHeader-->
+
+    <div id="HeaderContent_area">
+        <img class="Logo" src="/assets/logo.png" alt="Logo">
+        <!-- Navigation -->
+        <ul class="MainMenu">
+            <li><a class="LeftTab current" id="Dashboard_tab" href="/">Dashboard</a></li>
+            <li><a class="NormalTab" data-step="4" data-intro="See your transaction details here, all in one place" data-position="right" id="Transactions_tab" href="/simple_pages/make_a_transaction">Make A Transaction</a></li>
+            <li><a class="NormalTab" data-step="5" data-intro="Pay allows you to make bulk payments to external entities" data-position="right" id="Pay_tab" href="/simple_pages/view_activity">View Activity</a></li>
+            <li><a class="NormalTab" data-step="2" data-intro="You can also transfer funds and view your past transfer details here." data-position="right" id="Transfers_tab" href="/simple_pages/cash_advance">Cash Advance</a></li>
+            <li><a class="RightTab" id="CashAdvance_tab" href="/simple_pages/reports">Reports</a></li>
+        </ul>
+
+
+        <div id="HeaderSeparator"></div>
+
+    </div>
+
 <%= yield %>
-<footer>
-  <ul>
-    <li><%= link_to "PRIVACY POLICY", root_path %></li>
-    <li><%= link_to "CONTACT US", simple_pages_make_a_transaction_path %></li>
-    <li><%= link_to "TERMS OF USE", simple_pages_view_activity_path %></li>
-  </ul>
-</footer>
+<div class="FooterContainer">
+        <div class="Footer">
+            <a href="/privacy">Privacy policy</a> | <a href="/tos"> Terms of service</a> | <a href="/msa">Merchant service agreement</a> | <a href="/lnm">Lipa Na M-PESA terms and conditions</a> | <a href="/contact_us">Contact us</a>
+            <br> © Copyright 2018 thaErrorAssets, Inc.
+        </div>
 </body>
 </html>

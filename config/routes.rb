@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'make_a_transaction/index'
+
   get 'invest_cash/deposit'
 
   get 'invest_cash/my_deposits'
